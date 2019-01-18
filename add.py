@@ -12,7 +12,8 @@ def addnum(lhs, rhs):
 
     if not float(rhs).is_integer():
         raise TypeError('right-hand-side must be int')
-    return lhs + rhs
+
+    return int(lhs) + int(rhs)
 
 def addlist(x, y):
     return [x] + y
