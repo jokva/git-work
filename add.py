@@ -7,10 +7,11 @@ Things includes numbers and lists
 import argparse
 
 def addnum(lhs, rhs):
-    if not float(lhs).is_integer():
+    lhs, rhs = float(lhs), float(rhs)
+    if not lhs.is_integer():
         raise TypeError('left-hand-side must be int')
 
-    if not float(rhs).is_integer():
+    if not rhs.is_integer():
         raise TypeError('right-hand-side must be int')
 
     return int(lhs) + int(rhs)
