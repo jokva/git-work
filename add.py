@@ -1,5 +1,7 @@
 """
 Add things
+
+Things includes numbers and lists
 """
 
 import argparse
