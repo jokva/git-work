@@ -4,8 +4,13 @@ Add things
 
 import argparse
 
-def addnum(x, y):
-    return x + y
+def addnum(lhs, rhs):
+    if not isinstance(lhs, int):
+        raise TypeError('left-hand-side must be int')
+
+    if not isinstance(rhs, int):
+        raise TypeError('right-hand-side must be int')
+    return lhs + rhs
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Add things')
