@@ -8,6 +8,7 @@ import argparse
 
 def addnum(lhs, rhs):
     lhs, rhs = float(lhs), float(rhs)
+
     if not lhs.is_integer():
         raise TypeError('left-hand-side must be int')
 
