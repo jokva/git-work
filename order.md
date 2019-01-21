@@ -1,0 +1,8 @@
+- Initial commit
+- Simple add (difference workdir/stage/commit/remote)
+- Git add --patch
+- Branch (add-for-list)
+- Add commit to master (master-changed-after-list-branch)
+- Merge different changesets (add-for-list master-changed-after-list-branch)
+- Rebase changesets (add-for-list master-changed-after-list-branch)
+- Show fixup for committing from a dirty index
